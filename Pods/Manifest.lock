@@ -1,0 +1,81 @@
+PODS:
+  - FMDB/SQLCipher (2.7.5):
+    - SQLCipher
+  - SalesforceAnalytics (7.0.0):
+    - SalesforceAnalytics/SalesforceAnalytics (= 7.0.0)
+  - SalesforceAnalytics/SalesforceAnalytics (7.0.0):
+    - SalesforceSDKCommon
+  - SalesforceSDKCommon (7.0.0):
+    - SalesforceSDKCommon/SalesforceSDKCommon (= 7.0.0)
+  - SalesforceSDKCommon/SalesforceSDKCommon (7.0.0)
+  - SalesforceSDKCore (7.0.0):
+    - SalesforceSDKCore/SalesforceSDKCore (= 7.0.0)
+  - SalesforceSDKCore/SalesforceSDKCore (7.0.0):
+    - SalesforceAnalytics
+    - SalesforceSDKCore/SalesforceSDKCore/arc (= 7.0.0)
+    - SalesforceSDKCore/SalesforceSDKCore/base (= 7.0.0)
+    - SalesforceSDKCore/SalesforceSDKCore/no-arc (= 7.0.0)
+  - SalesforceSDKCore/SalesforceSDKCore/arc (7.0.0):
+    - SalesforceAnalytics
+    - SalesforceSDKCore/SalesforceSDKCore/base
+    - SalesforceSDKCore/SalesforceSDKCore/no-arc
+  - SalesforceSDKCore/SalesforceSDKCore/base (7.0.0):
+    - SalesforceAnalytics
+  - SalesforceSDKCore/SalesforceSDKCore/no-arc (7.0.0):
+    - SalesforceAnalytics
+    - SalesforceSDKCore/SalesforceSDKCore/base
+  - SmartStore (7.0.0):
+    - SmartStore/SmartStore (= 7.0.0)
+  - SmartStore/SmartStore (7.0.0):
+    - FMDB/SQLCipher (~> 2.7.5)
+    - SalesforceSDKCore
+    - SQLCipher/fts (~> 3.4.2)
+  - SmartSync (7.0.0):
+    - SmartSync/SmartSync (= 7.0.0)
+  - SmartSync/SmartSync (7.0.0):
+    - SalesforceSDKCore
+    - SmartStore
+  - SQLCipher (3.4.2):
+    - SQLCipher/standard (= 3.4.2)
+  - SQLCipher/common (3.4.2)
+  - SQLCipher/fts (3.4.2):
+    - SQLCipher/common
+  - SQLCipher/standard (3.4.2):
+    - SQLCipher/common
+
+DEPENDENCIES:
+  - SalesforceAnalytics (from `mobile_sdk/SalesforceMobileSDK-iOS`)
+  - SalesforceSDKCommon (from `mobile_sdk/SalesforceMobileSDK-iOS`)
+  - SalesforceSDKCore (from `mobile_sdk/SalesforceMobileSDK-iOS`)
+  - SmartStore (from `mobile_sdk/SalesforceMobileSDK-iOS`)
+  - SmartSync (from `mobile_sdk/SalesforceMobileSDK-iOS`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FMDB
+    - SQLCipher
+
+EXTERNAL SOURCES:
+  SalesforceAnalytics:
+    :path: mobile_sdk/SalesforceMobileSDK-iOS
+  SalesforceSDKCommon:
+    :path: mobile_sdk/SalesforceMobileSDK-iOS
+  SalesforceSDKCore:
+    :path: mobile_sdk/SalesforceMobileSDK-iOS
+  SmartStore:
+    :path: mobile_sdk/SalesforceMobileSDK-iOS
+  SmartSync:
+    :path: mobile_sdk/SalesforceMobileSDK-iOS
+
+SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  SalesforceAnalytics: c60f6dfa3a6c90fab772ae6ffad6e7823b99de90
+  SalesforceSDKCommon: 4f1a29a8873819ba931cfeca6a4188bd73567106
+  SalesforceSDKCore: 11cd07b1111b4453568c453351e3e5b763bf0fd0
+  SmartStore: 5db1a5af66525e1d397d4c4df3bb630015ae73f8
+  SmartSync: 337a72f4344aab6f1ac1c5276b8e648948fe1da5
+  SQLCipher: f9fcf29b2e59ced7defc2a2bdd0ebe79b40d4990
+
+PODFILE CHECKSUM: 28168472a1153aee1ae824d007fcc0b0bca75d5b
+
+COCOAPODS: 1.6.1
